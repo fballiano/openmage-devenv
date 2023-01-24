@@ -1,0 +1,29 @@
+{
+    "name": "fab/openmage-devenv",
+    "autoload": {
+        "psr-4": {
+            "Fab\\OpenmageDevenv\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fabrizio Balliano",
+            "email": "fabrizio.balliano@gmail.com"
+        }
+    ],
+    "require": {
+        "aydin-hassan/magento-core-composer-installer": "^2.1.0",
+        "openmage/magento-lts": "^20.0.0"
+    },
+    "extra": {
+        "enable-patching": true,
+        "magento-core-package-type": "magento-source",
+        "magento-root-dir": "pub"
+    },
+    "config": {
+        "allow-plugins": {
+            "aydin-hassan/magento-core-composer-installer": true,
+            "magento-hackathon/magento-composer-installer": true
+        }
+    }
+}
