@@ -34,6 +34,10 @@ MailHog is chatching all the emails, but:
 - you'll have to install `aschroder/smtp_pro` or any other SMTP module for OpenMage (SMTP runs on port `1025`)
 - to read the emails and verify what's been sent access the MailHog web interface at `http://127.0.0.1:8025`
 
+## Notes about composer.lock
+
+At the moment this project doesn't have a `composer.lock` file in the repo, because it differ based on the PHP version, this makes it a bit easier to change PHP version if you need to. Anyway I think it's a minor detail and may change in the future.
+
 ## TODO
 
 I'm working with the NixOS maintainers to [integrate n98-magerun in their repos](https://github.com/NixOS/nixpkgs/pull/212296), they will be soon made available inside the `nix-shell `for use to use without any need to install them, it will be pretty amazing.
