@@ -28,6 +28,30 @@ At the moment the project is configured with `http://openmage.test` as the main 
 
 When asked for MySQL host/user/password type `127.0.0.1`, `openmage` and `openmage` (you can change the default username/password editing your `devenv.nix` file).
 
+## Configuring OpenMage for redis
+
+redis runs on port 6379, you can enable OpenMage support for it in the usual way, eg:
+```xml
+<cache>
+    <backend>Mage_Cache_Backend_Redis</backend>
+    <backend_options>
+        <server>127.0.0.1</server>
+        <port>6379</port>
+        <persistent><![CDATA[cache-db0]]></persistent>
+        <database>0</database>
+        <password></password>
+        <force_standalone>0</force_standalone> <!-- 0 for phpredis, 1 for standalone php -->
+        <connect_retries>1</connect_retries>
+        <read_timeout>10</read_timeout>
+        <automatic_cleaning_factor>0</automatic_cleaning_factor>
+        <compress_data>1</compress_data>
+        <compress_tags>1</compress_tags>
+        <compress_threshold>204800</compress_threshold>
+        <compression_lib>gzip</compression_lib>
+    </backend_options>
+</cache>
+'''
+
 ## Notes about email testing
 
 MailHog is chatching all the emails, but:
