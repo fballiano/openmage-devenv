@@ -32,7 +32,7 @@
   services.caddy.enable = true;
   services.caddy.virtualHosts."http://openmage.test:80" = {
     extraConfig = ''
-      root * .
+      root * pub
       php_fastcgi unix/${config.languages.php.fpm.pools.web.socket}
       file_server
     '';
