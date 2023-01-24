@@ -31,7 +31,7 @@ When asked for MySQL host/user/password type `127.0.0.1`, `openmage` and `openma
 ## Notes about email testing
 
 MailHog is chatching all the emails, but:
-- you'll have to install `aschroder/smtp_pro` or any other SMTP module for OpenMage
+- you'll have to install `aschroder/smtp_pro` or any other SMTP module for OpenMage (SMTP runs on port `1025`)
 - to read the emails and verify what's been sent access the MailHog web interface at `http://127.0.0.1:8025`
 
 ## TODO
