@@ -22,6 +22,10 @@ This repo has a basic (and yet complete) [OpenMage](https://github.com/OpenMage/
 
 At the moment the project is configured with `http://openmage.test` as the main domain name (you can change it in the `devenv.nix` file), so you'll have to add `openmage.test`to your `hosts` file first, then you'll be able to open the browser to `http://openmage.test` and continue the installation through the web installer.
 
+## Notes about installing OpenMage
+
+When asked for MySQL host/user/password type `127.0.0.1`, `openmage` and `openmage` (you can change the default username/password editing your `devenv.nix` file).
+
 ## Notes about email testing
 
 MailHog is chatching all the emails, but:
@@ -30,4 +34,4 @@ MailHog is chatching all the emails, but:
 
 ## TODO
 
-I'm working with the NixOS maintainers to integrate n98-magerun in their repos, they will be soon made available inside the `nix-shell `for use to use without any need to install them, it will be pretty amazing
+I'm working with the NixOS maintainers to [integrate n98-magerun in their repos](https://github.com/NixOS/nixpkgs/pull/212296), they will be soon made available inside the `nix-shell `for use to use without any need to install them, it will be pretty amazing.
