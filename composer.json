@@ -1,14 +1,9 @@
 {
     "name": "fab/openmage-devenv",
-    "autoload": {
-        "psr-4": {
-            "Fab\\OpenmageDevenv\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "Fabrizio Balliano",
-            "email": "fabrizio.balliano@gmail.com"
+            "email": "fabrizio@fabrizioballiano.com"
         }
     ],
     "require": {
