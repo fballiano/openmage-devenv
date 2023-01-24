@@ -50,7 +50,7 @@ redis runs on port 6379, you can enable OpenMage support for it in the usual way
         <compression_lib>gzip</compression_lib>
     </backend_options>
 </cache>
-'''
+```
 
 ## Notes about email testing
 
