@@ -7,7 +7,7 @@
   packages = [ pkgs.git pkgs.gnupatch ];
 
   languages.php.enable = true;
-  languages.php.package = pkgs.php80.buildEnv {
+  languages.php.package = pkgs.php81.buildEnv {
     extensions = { all, enabled }: with all; enabled ++ [ xdebug redis ];
     extraConfig = ''
       memory_limit = 512m
