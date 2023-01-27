@@ -10,6 +10,7 @@ This repo has a basic (and yet complete) [OpenMage](https://github.com/OpenMage/
 - redis 7.0
 - Xdebug 3.2
 - [MailHog](https://github.com/mailhog/MailHog) for email testing
+- n98-magerun
 
 # Install the environment
 
