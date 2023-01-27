@@ -61,7 +61,3 @@ MailHog is chatching all the emails, but:
 ## Notes about composer.lock
 
 At the moment this project doesn't have a `composer.lock` file in the repo, because it differ based on the PHP version, this makes it a bit easier to change PHP version if you need to. Anyway I think it's a minor detail and may change in the future.
-
-## TODO
-
-I'm working with the NixOS maintainers to [integrate n98-magerun in their repos](https://github.com/NixOS/nixpkgs/pull/212296), they will be soon made available inside the `nix-shell `for use to use without any need to install them, it will be pretty amazing.
