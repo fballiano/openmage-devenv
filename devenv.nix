@@ -4,7 +4,7 @@
   env.MAGE_IS_DEVELOPER_MODE = 1;
   env.DEV_PHP_STRICT = 1;
 
-  packages = [ pkgs.git pkgs.gnupatch ];
+  packages = [ pkgs.git pkgs.gnupatch pkgs.n98-magerun ];
 
   languages.php.enable = true;
   languages.php.package = pkgs.php81.buildEnv {
