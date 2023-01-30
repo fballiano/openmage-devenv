@@ -28,6 +28,7 @@
 
   services.mailhog.enable = true;
   services.redis.enable = true;
+  services.redis.port = 6379;
 
   services.caddy.enable = true;
   services.caddy.virtualHosts."http://openmage.test:80" = {
@@ -39,6 +40,7 @@
   };
 
   services.mysql.enable = true;
+  services.mysql.settings.mysqld.port = 3306;
   services.mysql.initialDatabases = [{ name = "openmage"; }];
   services.mysql.ensureUsers = [
     {
