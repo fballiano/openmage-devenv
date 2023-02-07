@@ -22,7 +22,7 @@ This repo has a basic (and yet complete) [OpenMage](https://github.com/OpenMage/
 1. Enter the cloned repo's directory
 2. run `devenv up`, this will start all the software stack (and also run composer install for you)
 
-At the moment the project is configured with `http://openmage.test` as the main domain name (you can change it in the `devenv.nix` file), so you'll have to add `openmage.test`to your `hosts` file first, then you'll be able to open the browser to `http://openmage.test` and continue the installation through the web installer.
+At the moment the project is configured with `http://openmage.test` as the main domain name (you can change it in the `devenv.nix` file) and you don't even have to add it to your hosts file manually since it's automatically managed through hostctl. You'll just have to open your browser to `http://openmage.test` and continue the installation through the web installer.
 
 ## Notes about installing OpenMage
 
