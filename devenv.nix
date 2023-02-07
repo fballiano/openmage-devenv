@@ -4,6 +4,10 @@
   env.MAGE_IS_DEVELOPER_MODE = 1;
   env.DEV_PHP_STRICT = 1;
 
+  hosts = {
+    "openmage.test" = "127.0.0.1";
+  };
+
   packages = [ pkgs.git pkgs.gnupatch pkgs.n98-magerun ];
 
   languages.php.enable = true;
