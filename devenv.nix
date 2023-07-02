@@ -11,7 +11,7 @@
   packages = [ pkgs.git pkgs.gnupatch pkgs.n98-magerun ];
 
   languages.php.enable = true;
-  languages.php.package = pkgs.php81.buildEnv {
+  languages.php.package = pkgs.php82.buildEnv {
     extensions = { all, enabled }: with all; enabled ++ [ xdebug redis ];
     extraConfig = ''
       memory_limit = 512m

@@ -8,17 +8,19 @@
     ],
     "require": {
         "aydin-hassan/magento-core-composer-installer": "^2.1.0",
-        "openmage/magento-lts": "^20.0.0"
+        "openmage/magento-lts": "^20.1.0-rc5"
     },
     "extra": {
         "enable-patching": true,
         "magento-core-package-type": "magento-source",
-        "magento-root-dir": "pub"
+        "magento-root-dir": "pub",
+        "magento-force": true
     },
     "config": {
         "allow-plugins": {
             "aydin-hassan/magento-core-composer-installer": true,
-            "magento-hackathon/magento-composer-installer": true
+            "magento-hackathon/magento-composer-installer": true,
+            "cweagans/composer-patches": true
         }
     }
 }
