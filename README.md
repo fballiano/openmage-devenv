@@ -5,7 +5,7 @@ It allows you to have containerized environments without containers or hyperviso
 This is by far the fasted Magento/Openmage development environment I've ever worked with and it's more than worth of the time to learn it.
 
 This repo has a basic (and yet complete) [OpenMage](https://github.com/OpenMage/magento-lts) project installed via composer and all of the necessary software stack:
-- PHP 8.1 (managed by PHP-FPM and served by [Caddy](https://caddyserver.com))
+- PHP 8.2 (managed by PHP-FPM and served by [Caddy](https://caddyserver.com))
 - MySQL 8.0
 - redis 7.0
 - Xdebug 3.2
